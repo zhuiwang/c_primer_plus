@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+#define PRAISE "Your are an extraordinary being"
+
+int main(int argc, const char *argv[])
+{
+    char name[40];
+    printf("What's your name?\n");
+    scanf("%s", name);
+    printf("Your name of %zd letters occupies %zd memory cells\n", strlen(name), sizeof(name));
+
+    printf("The phrase of praise has %zd letters\n", strlen(PRAISE));
+    printf("and occupies %zd memory cells\n", sizeof (PRAISE));
+    return 0;
+}
